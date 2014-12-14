@@ -1,0 +1,39 @@
+h1.title {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 10em;
+}
+
+.carousel-control .fa-chevron-left, .carousel-control .fa-chevron-right {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.carousel-control.right {
+    background-image:none !important;
+    color:black;
+}
+.carousel-control.left {
+    background-image:none !important;
+    color:black;
+}
+.carousel-caption {
+    color: black;
+    background-color:white;
+    font-size:1.5em;
+    width:100%;
+    bottom:-26%;
+    left: 1%;
+}
+
+.carousel {
+    margin-top: 100px;
+    height:450px;
+    padding-bottom:0px;
+    margin-bottom:30px;
+}
+
+.carousel-inner {
+    height:450px;
+}
