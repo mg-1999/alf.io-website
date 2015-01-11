@@ -1,6 +1,15 @@
+h2 {
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
 h1.title {
     font-family: 'Architects Daughter', cursive;
     font-size: 10em;
+    font-weight:500;
 }
 
 .carousel-control .fa-chevron-left, .carousel-control .fa-chevron-right {
@@ -36,4 +45,19 @@ h1.title {
 
 .carousel-inner {
     height:450px;
+}
+
+.alfio-header {
+    color: white;
+}
+
+.alfio-usedby {
+    background-color: white;
+}
+
+.header-btn {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    font-size: 3em;
 }

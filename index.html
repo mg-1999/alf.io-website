@@ -6,71 +6,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Alf.io</title>
     <meta name="description" content="A powerful reservation system. Keep control of your event and keep attendees data away from big players. Don't annoy them with additional fees, pay only what is really needed!">
-    <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Architects+Daughter|Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <a href="https://github.com/exteso/alf.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+    <a href="https://github.com/exteso/alf.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+    
+    <div class="jumbotron text-center alfio-header">
+        <h1 class="title">Alf.io</h1>
+        <img class="img-responsive center-block" src="images/responsive.png" alt="desktop, mobile and tablet ready"/>
+        <h1>The open source ticket reservation system</h1>
+        <a class="btn btn-lg btn-default" href="https://github.com/exteso/alf.io" target="_blank"><i class="fa fa-github-square"></i> View on github</a>
+        <a class="btn btn-lg btn-success" href="https://github.com/exteso/alf.io/releases/latest" target="_blank"><i class="fa fa-download"></i> Download</a>
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 page-content">
-                <div class="text-center">
-                  <h1 class="title">Alf.io</h1>
-                  <div class="row">
-                      <a class="btn btn-lg btn-default" href="https://github.com/exteso/alf.io" target="_blank"><i class="fa fa-github-square"></i> View on github</a> <a class="btn btn-lg btn-success" href="https://github.com/exteso/alf.io/releases/latest" target="_blank"><i class="fa fa-download"></i> Download</a>
-                  </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="page-header">
+                    <h2><a href="http://www.gnu.org/copyleft/gpl.html" target="_blank"><img src="images/gplv3-88x31.png" alt="GPLv3"></a> Free <small>as in a speech</small></h2>
                 </div>
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active" data-interval="4000">
-                      <img src="images/carousel/001.png" alt="fully customizable">
-                      <div class="carousel-caption">
-                        Fully customizable, single and multi-day event ready
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="images/carousel/002.png" alt="multi-categories">
-                      <div class="carousel-caption">
-                        You can define as many categories as you want, public or reserved. For the latter, a one-shot unique code will be generated for each seat
-                      </div>
-                    </div>
-                    <div class="item" data-interval="4000">
-                      <img src="images/carousel/003.png" alt="vat included or excluded?">
-                      <div class="carousel-caption">
-                        You can define either all-inclusive or vat-exclusive prices. It's up to you!
-                      </div>
-                    </div>
-                    <div class="item" data-interval="4000">
-                      <img src="images/carousel/004.png" alt="stripe integration">
-                      <div class="carousel-caption">
-                        <a href="https://stripe.com">Stripe.com</a> ready. Register an account on stripe and start selling tickets!
-                      </div>
-                    </div>
-                    <div class="item" data-interval="4000">
-                      <img src="images/carousel/005.png" alt="modify ticket">
-                      <div class="carousel-caption">
-                        Secure, fast, user-friendly and mobile-ready!
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="fa fa-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
+                <span>Alf.io is <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">free software</a>. You can use it whenever you want, wherever you want. You can also modify and redistribute it.</span>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="page-header">
+                    <h2><i class="fa fa-lock"></i> Secure</h2>
                 </div>
+                <span>Alf.io has been built with security in mind. Because you care about your user's data. It serves pages usign HTTPS protocol and with strict <a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">Content Security Policy</a> rules</span>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="page-header">
+                    <h2><i class="fa fa-mobile"></i> Mobile Ready</h2>
+                </div>
+                <span>The GUI has been built upon the wonderful <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap</a> framework, which is "mobile-first". The best user experience on each device</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="page-header">
+                    <h2><i class="fa fa-users"></i> Fair</h2>
+                </div>
+                <span>Keep control of your event and keep attendees data away from big players. Don't annoy them with additional fees and pay only what is really needed!</span>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="page-header">
+                    <h2><i class="fa fa-language"></i> Multi-language</h2>
+                </div>
+                <span>The GUI is currently available in Italian and English, additional translations such as German and French are in the pipeline. Help us to translate it on your language!</span>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="page-header">
+                    <h2><i class="fa fa-credit-card"></i> <a href="http://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard" target="_blank">PCI</a>-Compliant</h2>
+                </div>
+                <span>Alf.io uses <a href="https://stripe.com" target="_blank">Stripe</a> as gateway for payments done by credit card. This means that no sensitive data will be stored on your server and you’ll be automatically compliant with the strictest PCI requirements.</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="page-header">
+                    <h2><i class="fa fa-wrench"></i> Flexible</h2>
+                </div>
+                <span>You can define free-of-charge as well as paid events. You can allow your users either to pre-pay the ticket by credit card (<a href="https://stripe.com" target="_blank">Stripe</a> account required) or post-pay it by bank transfer, or even pay it at the entrance desk.</span>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="page-header">
+                    <h2><i class="fa fa-area-chart"></i> Measurable</h2>
+                </div>
+                <span>Simply create a Google Analytics (tm) account and configure your metrics. All the URLs are unique and let you analyze the incoming traffic.</span>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="page-header">
+                    <h2><i class="fa fa-cloud"></i> Cloud ready</h2>
+                </div>
+                <span>Already tested and deployed on <a href="https://www.openshift.com/">Openshift</a> (tutorials will follow). For low-size events (less than 100 attendees) you can even use their free plan!</span>
+            </div>
+        </div>
+        <hr />
+        <div class="jumbotron alfio-usedby text-center">
+            <h2>Proudly collecting attendees for:</h2>
+            <div class="center-block">
+                <a href="https://www.voxxed.com/days-ticino15/" target="_blank"><img src="images/ext/vdt.png" class="img-thumbnail img-responsive"></a>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center text-muted">
+                Alf.io is free software. All the code is licensed under <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GPLv3</a>. This site and the documentation are licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>. <br>The main image includes work from <a href="https://www.iconfinder.com/icons/239229/apple_computer_display_laptop_mac_monitor_notebook_pc_screen_icon">Pixelkit</a>, which is under <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY 3.0</a>
             </div>
         </div>
     </div>
+    
 </body>
 </html>
