@@ -61,3 +61,7 @@ h1.title {
     border-color: #fff;
     font-size: 3em;
 }
+
+.margin-10 {
+    margin: 10px;
+}
