@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Openshift deployment howto - Alf.io</title>
+        <meta name="description" content="How to deploy Alf.io on Openshift">
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/index.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+        <meta property="og:image" content="http://alf.io/images/responsive.png" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="pull-left"><a href="btn btn-default"><i class="fa fa-chevron-left"></i> Back</button></a></div>
+            <div class="page-header">
+                <h1>How to deploy Alf.io on <a href="openshift.com" target="_blank">Openshift</a> (Wildfly 8.2)</h1>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="images/001.png" target="_blank"><img class="media-object" srcset="images/001_mini.png 1x, images/001.png 2x"></a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Create new application</h4>
+                    <p>Click on <em>Add new application</em> on your openshift home</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="images/002.png" target="_blank"><img class="media-object" srcset="images/002_mini.png 1x, images/002.png 2x"></a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Add application server cartridge</h4>
+                    <p>Use the search input text to find the application server named "Wildfly Application Server 8.2.0.Final" (or newer)</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="images/003.png" target="_blank"><img class="media-object" srcset="images/003_mini.png 1x, images/003.png 2x"></a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Configure the Application Server</h4>
+                    <ul>
+                        <li>Define a public address for your application inserting the application name and selecting the domain on the right. The final URL will look like "https://myapplication-mydomain.rhcloud.com"</li>
+                        <li>Select the gear size for your application</li>
+                        <li>Select scaling profile. We would suggest to select the "scale with web traffic" option</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="images/004.png" target="_blank"><img class="media-object" srcset="images/004_mini.png 1x, images/004.png 2x"></a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Add a database cartridge</h4>
+                    <p>Click on <em>Add Postgresql 9.2</em> link in order to create a database cartridge. Please note that Alf.io supports only Postgresql</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="images/005.png" target="_blank"><img class="media-object" srcset="images/005_mini.png 1x, images/005.png 2x"></a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Save Postgres cartridge</h4>
+                    <p>Click on <em>Add Cartridge</em> link to create the cartridge</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="images/006.png" target="_blank"><img class="media-object" srcset="images/006_mini.png 1x, images/006.png 2x"></a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Restart your application</h4>
+                    <p>The application and the database cartridges have been successfully created but not yet linked each other. To do that, you must restart your application. Just click on <em>Restart Application</em>, as shown</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="images/007.png" target="_blank"><img class="media-object" srcset="images/007_mini.png 1x, images/007.png 2x"></a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Deploy Alf.io</h4>
+                    <p>before doing further steps, please ensure that you're already able to access your application remotely. You may need extra configuration</p>
+                    <ul>
+                        <li>download the latest alfio.war from <a href="https://github.com/exteso/alf.io/releases/latest" target="_blank">GitHub</a></li>
+                        <li>upload the war to openshift: <code>scp alfio.war youruser@yourapplication-yourdomain.rhcloud.com:wildfly/standalone/deployments/ROOT</code></li>
+                        <li>install the application: <code>ssh youruser@yourapplication-yourdomain.rhcloud.com "mv wildfly/standalone/deployments/ROOT wildfly/standalone/deployments/ROOT.war"</code></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="images/008.png" target="_blank"><img class="media-object" srcset="images/008_mini.png 1x, images/008.png 2x"></a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Retrieve admin password</h4>
+                    <p>check the log <code>~/wildfly/logs/server.log</code> and find the auto-generated password. Then you can access the admin under <code>https://appname-yourdomain.rhcloud.com/admin/</code></p>
+                </div>
+            </div>
+            <div class="pull-left"><a href="btn btn-default"><i class="fa fa-chevron-left"></i> Back</button></a></div>
+        </div>
+    </body>
+</html>
