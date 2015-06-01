@@ -12,6 +12,12 @@ h1.title {
     font-weight:500;
 }
 
+a.navbar-brand {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 2em;
+  font-weight:500;
+}
+
 .carousel-control .fa-chevron-left, .carousel-control .fa-chevron-right {
     position: absolute;
     top: 50%;
