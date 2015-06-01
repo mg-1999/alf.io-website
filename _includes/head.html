@@ -4,11 +4,11 @@
     <title>{% if page.title %}{{ page.title }}{% else if site.title %}{{ site.title }}{% else %}Alf.io{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link href='http://fonts.googleapis.com/css?family=Architects+Daughter|Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ "bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "bootstrap/css/bootstrap-theme.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/bootstrap/css/bootstrap-theme.min.css" | prepend: site.baseurl }}">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ "css/index.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="{{ "bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
     <meta property="og:image" content="http://alf.io/images/responsive.png" />
 </head>
